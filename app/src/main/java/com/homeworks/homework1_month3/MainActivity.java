@@ -3,6 +3,7 @@ package com.homeworks.homework1_month3;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -79,5 +80,16 @@ public class MainActivity extends AppCompatActivity {
         String text1 = savedInstanceState.getString("key1", calculator.getText());
         textView.setText(text);
         textView.setText(text1);
+    }
+
+    public void toBack(View view) {
+        Intent intent=new Intent();
+        intent.putExtra("key",calculator.getText());
+        setResult(RESULT_OK,intent);
+        finish();
+    }
+
+    public void clearTextview(View view) {
+        textView.setText("");
     }
 }
