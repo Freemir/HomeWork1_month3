@@ -5,7 +5,7 @@ public class Calculator {
     private int firstArg;
     private int secondArg;
 
-    private StringBuilder inputString = new StringBuilder();
+    StringBuilder inputString = new StringBuilder();
 
     private int actionSelected;
 
