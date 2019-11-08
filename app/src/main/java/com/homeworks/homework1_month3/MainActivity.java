@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-    public void clearTextview(View view) {
+    public void clearTextView(View view) {
         textView.setText("");
     }
 }
